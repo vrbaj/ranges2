@@ -1,0 +1,45 @@
+td {
+    text-align: center;
+    border: 1px solid gray;
+    width: 40px;
+    height: 40px;
+}
+
+td.suited_card {
+    background-color: #CCCCCC;
+}
+
+td.offsuit_card {
+    background-color: #DDDDDD;
+}
+
+td.same_card {
+    background-color: #EEEEEE;
+}
+
+td.selected_card1 {
+    background-color: #74226c;
+    color: white;
+}
+
+td.selected_card2 {
+    background-color: #b168a9;
+    color: white;
+}
+
+td.selected_card3 {
+    background-color: #EE2222;
+    color: white;
+}
+
+td.selected_card4 {
+    background-color: rgb(211, 106, 106);
+    color: white;
+}
+
+
+
+#sheets_selector td {
+    width: auto;
+    text-align: left;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Poker</title>
+
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script src="misc.js"></script>
+    <link rel="stylesheet" type="text/css" href="misc.css">
+
+
+</head>
+
+<body>
+
+
+<!-- <button id="export_button">Export</button> -->
+
+<table id="poker_matrix"></table>
+
+<table id="sheets_selector">
+    <tr>
+        <th></th>
+        <th>Open</th>
+        <th>Defend</th>
+    </tr>
+    <tr>
+        <td>EP</td>
+        <td><button class="display_button" id="display_open_ep">All</button></td>
+    </tr>
+    <tr>
+        <td>MP</td>
+        <td><button class="display_button" id="display_open_mp">All</button></td>
+        <td><button class="display_button" id="display_defense_mp">All</button></td>
+    </tr>
+    <tr>
+        <td>CO</td>
+        <td><button class="display_button" id="display_open_co">All</button></td>
+        <td>
+            <button class="display_button" id="display_defense_co_vs_mp">MP</button>
+        </td>
+    </tr>
+    <tr>
+        <td>BU</td>
+        <td><button class="display_button" id="display_open_bu">All</button></td>
+        <td>
+            <button class="display_button" id="display_defense_bb_vs_co">CO</button>
+            <button class="display_button" id="display_defense_bb_vs_sb">SB</button>
+        </td>
+    </tr>
+    <tr>
+        <td>SB</td>
+        <td><button class="display_button" id="display_open_sb">All</button></td>
+        <td>
+            <button class="display_button" id="display_defense_sb">All</button>
+        </td>
+    </tr>
+    <tr>
+        <td>BB</td>
+        <td><button class="display_button" id="display_open_bb">All</button></td>
+        <td>
+            <button class="display_button" id="display_defense_bb_vs_ep">EP</button>
+            <button class="display_button" id="display_defense_bb_vs_co">CO</button>
+            <button class="display_button" id="display_defense_bb_vs_bu">BU</button>
+            <button class="display_button" id="display_defense_bb_vs_sb">SB</button>
+        </td>
+    </tr>
+</table>
+
+
+
+
+
+
+<script>
+
+var selected_cards = [];
+let board1 = new HandMatrix("poker_matrix");
+board1.draw_board(selected_cards);
+
+
+$( document ).ready(function() {
+
+    // $("#export_button").click(function() {
+    //     alert(selected_cards);
+    // });
+
+    // var content = "";
+    // for (i = 0; i < SHEETS.length; i++) {
+    //     var item = SHEETS[i]
+    //     content += "<tr>";
+    //     content += "<td>" + item.name + "</td>";
+    //     content += '<td><button class="display_button" id="display_' + item.name + '">Show</button></td>';
+    //     content += "</tr>";    
+    // }    
+    // $("#sheets_selector").html(content);
+
+    $(".display_button").click(function() {
+        var sheet_name = $(this).attr("id").substring(8);
+        var sheet = get_sheet(sheet_name);
+        selected_cards = sheet.cards;
+        board1.draw_board(selected_cards);
+    });
+
+});
+
+</script>
+
+
+</body>
+
+</html> 
