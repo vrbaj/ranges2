@@ -1,16 +1,26 @@
+.right_panel {
+    float: left;
+}
+
+.left_panel {
+    float: left;
+}
+
+
 td {
     text-align: center;
     border: 1px solid gray;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
 
 td.suited_card {
-    background-color: #CCCCCC;
+    background-color: #666666;
+    color: white;
 }
 
 td.offsuit_card {
-    background-color: #DDDDDD;
+    background-color: #BBBBBB;
 }
 
 td.same_card {

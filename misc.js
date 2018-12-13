@@ -38,7 +38,7 @@ var SHEETS = [
     },
     {
         "cards": [
-            "22,33,44,55,66,77,88,99,TT,A2s,A3s,A4s,A5s,A6s,A7s,A8s,A9s,ATs,AJs,KTs,KJs,AJo,QJs,JTs,98s",
+            "22,33,44,55,66,77,88,99,T9s,TT,A2s,A3s,A4s,A5s,A6s,A7s,A8s,A9s,ATs,AJs,AQo,KTs,KJs,AJo,QJs,JTs,98s",
             "87s",
             "JJ,QQ,KK,AA,AQs,AKs,KQs,AKo"
         ],
@@ -64,7 +64,7 @@ var SHEETS = [
     },
     {
         "cards": [
-            "22,33,44,55,66,77,88,99,A2s,A3s,A4s,A5s,A6s,A7s,A8s,A9s,ATs,KTs,KJs,ATo,AJo,QJs,JTs,98s",
+            "22,33,44,55,66,77,88,99,A2s,A3s,A4s,A5s,A6s,A7s,A8s,A9s,ATs,KTs,KJs,ATo,AJo,QJs,JTs,98s,AQo,KQo",
             "87s,76s",
             "TT,JJ,QQ,KK,AA,AJs,AQs,AKs,KQs,AKo"
         ],
@@ -82,8 +82,9 @@ var SHEETS = [
     },
     {
         "cards": [
+            "99,TT,JJ,QQ,KK,AA,A2s,A3s,A4s,A5s,A6s,A7s,A8s,A9s,ATs,AJs,AQs,AKs,KTs,KJs,KQs,KAs,QJs,QKs,QAs,JTs,T9s,98s,ATo,AJo,AQo,AKo,KQo,QTs",
             "",
-            "99,TT,JJ,QQ,KK,AA,A2s,A3s,A4s,A5s,A6s,A7s,A8s,A9s,ATs,AJs,AQs,AKs,KTs,KJs,KQs,KAs,QJs,QKs,QAs,JTs,T9s,98s,ATo,AJo,AQo,AKo,KQo"
+            ""
         ],
         "name": "Defense BU vs CO",
         "tag": "defense_bu_vs_co"
@@ -107,6 +108,7 @@ var SHEETS = [
     },
     {
         "cards": [
+            "",
             "",
             "88,99,TT,JJ,QQ,KK,AA,A2s,A3s,A4s,A5s,A6s,A7s,A8s,A9s,ATs,AJs,AQs,AKs,K9s,KTs,KJs,KQs,KAs,QTs,QJs,QKs,QAs,JTs,T9s,AJo,AQo,AKo,KQo"
         ],

@@ -20,56 +20,70 @@
 
 <!-- <button id="export_button">Export</button> -->
 
-<table id="poker_matrix"></table>
+<div class="left_panel">
+    <table id="sheets_selector">
+        <tr>
+            <th></th>
+            <th>Open</th>
+            <th>Defend</th>
+        </tr>
+        <tr>
+            <td>EP</td>
+            <td><button class="display_button" id="display_open_ep">All</button></td>
+        </tr>
+        <tr>
+            <td>MP</td>
+            <td><button class="display_button" id="display_open_mp">All</button></td>
+            <td>
+                <button class="display_button" id="display_defense_mp">EP</button>
+            </td>
+        </tr>
+        <tr>
+            <td>CO</td>
+            <td><button class="display_button" id="display_open_co">All</button></td>
+            <td>
+                <button class="display_button" id="display_defense_mp">EP</button>
+                <button class="display_button" id="display_defense_co_vs_mp">MP</button>
+            </td>
+        </tr>
+        <tr>
+            <td>BU</td>
+            <td><button class="display_button" id="display_open_bu">All</button></td>
+            <td>
+                <button class="display_button" id="display_defense_mp">EP</button>
+                <button class="display_button" id="display_defense_co_vs_mp">MP</button>
+                <button class="display_button" id="display_defense_bu_vs_co">CO</button>
+            </td>
+        </tr>
+        <tr>
+            <td>SB</td>
+            <td><button class="display_button" id="display_open_sb">All</button></td>
+            <td>
+                <button class="display_button" id="display_defense_sb">All</button>
+            </td>
+        </tr>
+        <tr>
+            <td>BB</td>
+            <td>
+            </td>
+            <td>
+                <button class="display_button" id="display_defense_bb_vs_ep">EP</button>
+                <button class="display_button" id="display_defense_bb_vs_co">CO</button>
+                <button class="display_button" id="display_defense_bb_vs_bu">BU</button>
+                <button class="display_button" id="display_defense_bb_vs_sb">SB</button>
+            </td>
+        </tr>
+    </table>
+</div>
 
-<table id="sheets_selector">
-    <tr>
-        <th></th>
-        <th>Open</th>
-        <th>Defend</th>
-    </tr>
-    <tr>
-        <td>EP</td>
-        <td><button class="display_button" id="display_open_ep">All</button></td>
-    </tr>
-    <tr>
-        <td>MP</td>
-        <td><button class="display_button" id="display_open_mp">All</button></td>
-        <td><button class="display_button" id="display_defense_mp">All</button></td>
-    </tr>
-    <tr>
-        <td>CO</td>
-        <td><button class="display_button" id="display_open_co">All</button></td>
-        <td>
-            <button class="display_button" id="display_defense_co_vs_mp">MP</button>
-        </td>
-    </tr>
-    <tr>
-        <td>BU</td>
-        <td><button class="display_button" id="display_open_bu">All</button></td>
-        <td>
-            <button class="display_button" id="display_defense_bb_vs_co">CO</button>
-            <button class="display_button" id="display_defense_bb_vs_sb">SB</button>
-        </td>
-    </tr>
-    <tr>
-        <td>SB</td>
-        <td><button class="display_button" id="display_open_sb">All</button></td>
-        <td>
-            <button class="display_button" id="display_defense_sb">All</button>
-        </td>
-    </tr>
-    <tr>
-        <td>BB</td>
-        <td><button class="display_button" id="display_open_bb">All</button></td>
-        <td>
-            <button class="display_button" id="display_defense_bb_vs_ep">EP</button>
-            <button class="display_button" id="display_defense_bb_vs_co">CO</button>
-            <button class="display_button" id="display_defense_bb_vs_bu">BU</button>
-            <button class="display_button" id="display_defense_bb_vs_sb">SB</button>
-        </td>
-    </tr>
-</table>
+
+<div class="right_panel">
+    <table id="poker_matrix"></table>
+</div>
+
+
+
+
 
 
 
